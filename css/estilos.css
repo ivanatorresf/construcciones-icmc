@@ -18,9 +18,11 @@ body{
     margin: auto;
     padding: 60px 0;
 }
+
 header{
     height: 100vh;
-    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.4) 0%, rgba(251, 194, 235, 0.4) 100%), url(../img/seiss.jpg);
+    /*linear-gradient se utiliza para darle transparencia a la imagen con algun color*/
+    background-image: /*linear-gradient(to top, rgba(161, 140, 209, 0.4) 0%, rgba(65, 108, 228, 0.438) 100%),*/ url(../img/icmcportada01.jpg);
     background-repeat:  no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -54,7 +56,7 @@ header{
     right: 0;
     width: 30vw;
     height:  100%;
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -84,7 +86,7 @@ header{
 .subtitulo{
     text-align:  center;
     font-weight: 300;
-    color: #9f8ad0;
+    color: #0c3483;
     margin-bottom: 40px;
     font-size: 40px;
 }
@@ -106,11 +108,11 @@ header{
 }
 .n-service{
     margin-bottom: 7px;
-    color: #9f8ad0;
+    color: #0c3483;
 }
 .number{
     display: inline-block;
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
     width:  30px;
     height: 30px;
     color: #fff;
@@ -119,6 +121,9 @@ header{
     font-weight: 700;
 }
 .gallery{
+    background: #f2f2f2;
+}
+.contenedor02{
     background: #f2f2f2;
 }
 .contenedor-galeria{
@@ -187,7 +192,7 @@ header{
 }
 /* footer */
 footer{
-    background: #9f8ad0;
+    background: #0c3483;
     padding-bottom: 0.1px;
 }
 .footer-content{
@@ -201,14 +206,17 @@ footer{
 .brand{
     font-weight:  500;
     font-size: 40px;
+    
 }
 .brand+p{
     font-weight: 500;
+    
 }
 .social-media{
     width: 50%;
     display:  flex;
     justify-content: flex-end;
+    
 }
 .social-media-icon{
     display: inline-block;
@@ -222,11 +230,12 @@ footer{
 }
 .social-media-icon:hover{
     background: #fff;
-    color: #764ba2;
+    color: #0c3483;
 }
 .social-media-icon i{
     font-size: 30px;
     line-height: 60px;
+    
 }
 .line{
     width: 90%;
@@ -235,6 +244,19 @@ footer{
     height: 2px;
     background: #fff;
     margin-bottom: 60px;
+}
+.contacto{
+    color: #fff;
+}
+.brand{
+    color: #fff;
+}
+.brand02{
+    color: #fff;
+}
+.copyr{
+    color: #fff;
+    text-align: center;
 }
 
 /* Compativilidad para dispositivo movil */
@@ -281,8 +303,10 @@ footer{
         text-align: center;
         width: 80%;
         margin-bottom: 40px;
+        background: #fff;
     }
 }
+
 @media screen and (max-width:500px){
     .menu-navegacion{
         width: 65vw;
